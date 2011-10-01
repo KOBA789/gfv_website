@@ -1,23 +1,20 @@
 .shadowed-text {
-  text-shadow: #ffffff 0 1px 0;
+  text-shadow: #ed617d 0 1px 0;
 }
 html {
   width: 100%;
 }
 body {
   font-family: sans-serif;
-  background-color: #fdcea4;
-  color: #e61100;
-  /* width: 800px;
-  margin: 0 auto; */
-
+  background-color: #470815;
+  color: white;
   margin: 0;
   padding: 0;
 }
 nav {
   display: block;
   color: white;
-  font-size: 26pt;
+  font-size: 36pt;
   width: 100%;
   overflow: hidden;
 }
@@ -30,8 +27,7 @@ nav ul {
   list-style-type: none;
   display: -webkit-box;
   -webkit-transform: scale(2);
-  -webkit-transform-origin: 400px 1em;
-  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  -webkit-transform-origin: 100% 1em;
 }
 nav ul li {
   -webkit-box-flex: 1;
@@ -56,15 +52,14 @@ article {
   margin: 0 auto;
 }
 h1 {
-  color: #942c38;
-  text-shadow: #ffffff 0 1px 0;
+  color: #ff4334;
 }
 article > p {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #ff4334;
   padding: 18px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 7px;
 }
 footer {
+  color: white;
   text-align: right;
-  text-shadow: #ffffff 0 1px 0;
+  text-shadow: #ed617d 0 1px 0;
 }

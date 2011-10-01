@@ -1,11 +1,11 @@
-
+@color1: rgb(162, 19, 47);
 @color2: rgb(255, 67, 52);
 @color3: rgb(253, 206, 164);
-@title-color: #942c38;
-@text-color: lighten(@color2, -15%);
+@title-color: @color2;
+@text-color: white;
 
 .shadowed-text {
-  text-shadow: lighten(@color3, 30%) 0 1px 0;
+  text-shadow: lighten(@color1, 30%) 0 1px 0;
 }
 
 html {
@@ -14,10 +14,8 @@ html {
 
 body {
   font-family: sans-serif;
-  background-color: @color3;
+  background-color: darken(@color1, 20%);
   color: @text-color;
-  /* width: 800px;
-  margin: 0 auto; */
   margin: 0;
   padding: 0;
 }
@@ -25,7 +23,7 @@ body {
 nav {
   display: block;
   color: white;
-  font-size: 26pt;
+  font-size: 36pt;
   width: 100%;
   overflow: hidden;
   ul {
@@ -37,8 +35,7 @@ nav {
     list-style-type: none;
     display: -webkit-box;
     -webkit-transform: scale(2.0);
-    -webkit-transform-origin: 400px 1em;
-    -webkit-transition: -webkit-transform 0.1s ease-in-out;
+    -webkit-transform-origin: 100% 1em;
     li {
       -webkit-box-flex: 1;
       text-align: center;
@@ -72,16 +69,15 @@ header {
 
 h1 {
   color: @title-color;
-  .shadowed-text;
 }
 
 article > p {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: @color2;
   padding: 18px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 7px;
 }
 
 footer {
+  color: white;
   text-align: right;
   .shadowed-text;
 }
