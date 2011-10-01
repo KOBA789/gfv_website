@@ -1,7 +1,7 @@
 @color1: rgb(162, 19, 47);
 @color2: rgb(255, 67, 52);
 @color3: rgb(253, 206, 164);
-@title-color: @color2;
+@title-color: white;
 @text-color: white;
 
 .shadowed-text {
@@ -26,6 +26,7 @@ nav {
   font-size: 36pt;
   width: 100%;
   overflow: hidden;
+  background-color: @color3;
   ul {
     width: 800px;
     height: 2em;
@@ -34,16 +35,13 @@ nav {
     border: 0;
     list-style-type: none;
     display: -webkit-box;
-    -webkit-transform: scale(2.0);
-    -webkit-transform-origin: 100% 1em;
     li {
       -webkit-box-flex: 1;
       text-align: center;
       line-height: 2em;
-      font-weight: bold;
       font-family: 'Raleway', sans-serif;
       a {
-        color: white;
+        color: @color1;
         text-decoration: none;
       }
     }
@@ -69,9 +67,11 @@ header {
 
 h1 {
   color: @title-color;
+  font-family: 'Raleway', sans-serif;
+  font-size: 48pt;
 }
 
-article > p {
+body > p {
   background-color: @color2;
   padding: 18px;
 }

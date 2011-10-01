@@ -9,24 +9,21 @@ html ->
     script src: 'main.js'
 
   body ->
-    nav ->
-      ul id: 'menu', ->
-        li ->
-          a href: '#', 'Home'
-        li ->
-          a href: '#', 'About'
-        li ->
-          a href: '#', 'Works'
-        li ->
-          a href: '#', 'Contact'
+    header ->
+      h1 'GFutureVision'
+      nav ->
+        ul id: 'menu', ->
+          li ->
+            a href: '#', 'Home'
+          li ->
+            a href: '#', 'About'
+          li ->
+            a href: '#', 'Works'
+          li ->
+            a href: '#', 'Contact'
 
-    article ->
+    p ->
+      'Content.'
 
-      header ->
-        h1 'GFutureVision'
-
-      p ->
-        'Content.'
-
-      footer ->
-        p 'Copyright (C) 2011 GFutureVision All Rights Reserved.'
+    footer ->
+      p 'Copyright (C) 2011 GFutureVision All Rights Reserved.'

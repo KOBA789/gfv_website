@@ -17,6 +17,7 @@ nav {
   font-size: 36pt;
   width: 100%;
   overflow: hidden;
+  background-color: #fdcea4;
 }
 nav ul {
   width: 800px;
@@ -26,18 +27,15 @@ nav ul {
   border: 0;
   list-style-type: none;
   display: -webkit-box;
-  -webkit-transform: scale(2);
-  -webkit-transform-origin: 100% 1em;
 }
 nav ul li {
   -webkit-box-flex: 1;
   text-align: center;
   line-height: 2em;
-  font-weight: bold;
   font-family: 'Raleway', sans-serif;
 }
 nav ul li a {
-  color: white;
+  color: #a2132f;
   text-decoration: none;
 }
 nav:after {
@@ -52,9 +50,11 @@ article {
   margin: 0 auto;
 }
 h1 {
-  color: #ff4334;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 48pt;
 }
-article > p {
+body > p {
   background-color: #ff4334;
   padding: 18px;
 }
