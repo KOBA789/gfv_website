@@ -1,3 +1,6 @@
+.shadowed-text {
+  text-shadow: #ffffff 0 1px 0;
+}
 html {
   width: 100%;
 }
@@ -10,6 +13,7 @@ body {
 }
 h1 {
   color: #942c38;
+  text-shadow: #ffffff 0 1px 0;
 }
 body > p {
   background-color: rgba(255, 255, 255, 0.8);
@@ -18,4 +22,5 @@ body > p {
 }
 footer {
   text-align: right;
+  text-shadow: #ffffff 0 1px 0;
 }

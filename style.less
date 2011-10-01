@@ -1,8 +1,12 @@
 
 @color2: rgb(255, 67, 52);
 @color3: rgb(253, 206, 164);
-@titleColor: #942c38;
-@textColor: @color2;
+@title-color: #942c38;
+@text-color: @color2;
+
+.shadowed-text {
+  text-shadow: lighten(@color3, 30%) 0 1px 0;
+}
 
 html {
   width: 100%;
@@ -11,7 +15,7 @@ html {
 body {
   font-family: serif;
   background-color: @color3;
-  color: @textColor;
+  color: @text-color;
   width: 800px;
   margin: 0 auto;
 }
@@ -21,7 +25,8 @@ header {
 }
 
 h1 {
-  color: @titleColor;
+  color: @title-color;
+  .shadowed-text;
 }
 
 body > p {
@@ -32,4 +37,5 @@ body > p {
 
 footer {
   text-align: right;
+  .shadowed-text;
 }
