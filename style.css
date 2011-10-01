@@ -21,7 +21,6 @@ nav {
 }
 nav ul {
   width: 800px;
-  height: 2em;
   margin: 0 auto;
   padding: 0;
   border: 0;
@@ -31,7 +30,6 @@ nav ul {
 nav ul li {
   -webkit-box-flex: 1;
   text-align: center;
-  line-height: 2em;
   font-family: 'Raleway', sans-serif;
 }
 nav ul li a {
