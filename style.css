@@ -1,0 +1,21 @@
+html {
+  width: 100%;
+}
+body {
+  font-family: serif;
+  background-color: #fdcea4;
+  color: #ff4334;
+  width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  color: #942c38;
+}
+body > p {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 18px;
+  border-radius: 6px;
+}
+footer {
+  text-align: right;
+}

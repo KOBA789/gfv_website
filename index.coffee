@@ -10,5 +10,8 @@ html ->
     header ->
       h1 'GFutureVision'
 
+    p ->
+      'Content.'
+
     footer ->
       p 'Copyright (C) 2011 GFutureVision All Rights Reserved.'
