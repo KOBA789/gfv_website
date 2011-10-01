@@ -7,11 +7,20 @@ html ->
     script src: 'main.js'
 
   body ->
-    header ->
-      h1 'GFutureVision'
+    nav ->
+      ul ->
+        li 'Home'
+        li 'About'
+        li 'Works'
+        li 'Contact'
 
-    p ->
-      'Content.'
+    article ->
 
-    footer ->
-      p 'Copyright (C) 2011 GFutureVision All Rights Reserved.'
+      header ->
+        h1 'GFutureVision'
+
+      p ->
+        'Content.'
+
+      footer ->
+        p 'Copyright (C) 2011 GFutureVision All Rights Reserved.'

@@ -2,7 +2,7 @@
 @color2: rgb(255, 67, 52);
 @color3: rgb(253, 206, 164);
 @title-color: #942c38;
-@text-color: @color2;
+@text-color: lighten(@color2, -15%);
 
 .shadowed-text {
   text-shadow: lighten(@color3, 30%) 0 1px 0;
@@ -16,6 +16,45 @@ body {
   font-family: serif;
   background-color: @color3;
   color: @text-color;
+  /* width: 800px;
+  margin: 0 auto; */
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: block;
+  color: white;
+  font-size: 26pt;
+  width: 100%;
+  overflow: hidden;
+  ul {
+    width: 800px;
+    height: 3em;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    -webkit-transform: scale(3.0);
+    -webkit-transform-origin: 0 1.5em;
+    li {
+      -webkit-box-flex: 1;
+      text-align: center;
+      line-height: 3em;
+    }
+  }
+}
+
+nav:after {
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+
+article {
   width: 800px;
   margin: 0 auto;
 }
@@ -29,10 +68,10 @@ h1 {
   .shadowed-text;
 }
 
-body > p {
-  background-color: rgba(255, 255, 255, 0.8);
+article > p {
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 18px;
-  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 7px;
 }
 
 footer {
