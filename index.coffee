@@ -11,10 +11,14 @@ html ->
   body ->
     nav ->
       ul id: 'menu', ->
-        li 'Home'
-        li 'About'
-        li 'Works'
-        li 'Contact'
+        li ->
+          a href: '#', 'Home'
+        li ->
+          a href: '#', 'About'
+        li ->
+          a href: '#', 'Works'
+        li ->
+          a href: '#', 'Contact'
 
     article ->
 

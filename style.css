@@ -20,12 +20,6 @@ nav {
   font-size: 26pt;
   width: 100%;
   overflow: hidden;
-  /*
-  ul:hover {
-    -webkit-transform: scale(2.0);
-  }
-*/
-
 }
 nav ul {
   width: 800px;
@@ -36,7 +30,7 @@ nav ul {
   list-style-type: none;
   display: -webkit-box;
   -webkit-transform: scale(2);
-  -webkit-transform-origin: 0 1em;
+  -webkit-transform-origin: 400px 1em;
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
 }
 nav ul li {
@@ -45,6 +39,10 @@ nav ul li {
   line-height: 2em;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 nav:after {
   content: "";
