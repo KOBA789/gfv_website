@@ -4,6 +4,7 @@ html ->
     meta charset: 'utf-8'
     title 'GFutureVision - Home'
     link rel: 'stylesheet', href: './style.css'
+    link rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Raleway:100'
     script src: 'jquery.js'
     script src: 'main.js'
 
