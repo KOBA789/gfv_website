@@ -2,7 +2,7 @@ doctype 5
 html ->
   head ->
     meta charset: 'utf-8'
-    title 'GFutureVision - Home'
+    title 'GFVision - Home'
     link rel: 'stylesheet', href: './style.css'
     link rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Raleway:100'
     script src: 'jquery.js'
@@ -10,7 +10,7 @@ html ->
 
   body ->
     header ->
-      h1 'GFutureVision'
+      h1 'GFVision'
       nav ->
         ul id: 'menu', ->
           li ->
@@ -21,9 +21,10 @@ html ->
             a href: '#', 'Works'
           li ->
             a href: '#', 'Contact'
-
-    p ->
-      'Content.'
+    article ->
+      h2 'Home'
+      p ->
+        'Content.'
 
     footer ->
-      p 'Copyright (C) 2011 GFutureVision All Rights Reserved.'
+      p 'Copyright (C) 2011 GFVision All Rights Reserved.'
