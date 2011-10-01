@@ -4,11 +4,12 @@ html ->
     meta charset: 'utf-8'
     title 'GFutureVision - Home'
     link rel: 'stylesheet', href: './style.css'
+    script src: 'jquery.js'
     script src: 'main.js'
 
   body ->
     nav ->
-      ul ->
+      ul id: 'menu', ->
         li 'Home'
         li 'About'
         li 'Works'
