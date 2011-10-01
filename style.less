@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: sans-serif;
-  background-color: darken(@color1, 20%);
+  background-color: @color1;
   color: @text-color;
   margin: 0;
   padding: 0;
@@ -24,7 +24,6 @@ body {
 nav {
   display: block;
   color: white;
-  font-size: 36pt;
   width: 100%;
   overflow: hidden;
   background-color: @color3;
@@ -40,9 +39,20 @@ nav {
       float: left;
       text-align: center;
       .railway-font;
+      h2 {
+        font-size: 42pt;
+        padding: 0;
+        margin: 0;
+        a {
+          color: @color1;
+          text-decoration: none;
+        }
+      }
+    }
+    .current-page {
+      background-color: @color1;
       a {
-        color: @color1;
-        text-decoration: none;
+        color: @title-color;
       }
     }
   }
@@ -78,15 +88,20 @@ body > article {
   margin: 12px 0;
   padding: 18px 0;
   width: 100%;
-  h2 {
+  h3 {
     width: 800px;
     margin: 0 auto;
     .railway-font;
-    font-size: 42pt;
+    font-size: 24pt;
+    font-weight: normal;
   }
   p {
     width: 760px;
-    margin: 0 auto;    
+    margin: 0 auto;
+  }
+  ul {
+    width: 760px;
+    margin: 0 auto;
   }
 }
 

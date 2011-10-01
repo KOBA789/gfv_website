@@ -13,18 +13,18 @@ html ->
       h1 'GFVision'
       nav ->
         ul id: 'menu', ->
+          li class: 'current-page', ->
+            h2 -> a href: '#', 'Home'
           li ->
-            a href: '#', 'Home'
+            h2 -> a href: '#', 'About'
           li ->
-            a href: '#', 'About'
+            h2 -> a href: '#', 'Works'
           li ->
-            a href: '#', 'Works'
-          li ->
-            a href: '#', 'Contact'
+            h2 -> a href: '#', 'Contact'
     article ->
-      h2 'Home'
-      p ->
-        'Content.'
+      h3 -> '新着情報'
+      ul ->
+        li -> 'GFVision の公式サイトを公開しました。'
 
     footer ->
       p 'Copyright (C) 2011 GFVision All Rights Reserved.'

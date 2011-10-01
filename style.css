@@ -6,7 +6,7 @@ html {
 }
 body {
   font-family: sans-serif;
-  background-color: #470815;
+  background-color: #a2132f;
   color: white;
   margin: 0;
   padding: 0;
@@ -15,7 +15,6 @@ body {
 nav {
   display: block;
   color: white;
-  font-size: 36pt;
   width: 100%;
   overflow: hidden;
   background-color: #fdcea4;
@@ -34,9 +33,20 @@ nav ul li {
   text-align: center;
   font-family: 'Raleway', sans-serif;
 }
-nav ul li a {
+nav ul li h2 {
+  font-size: 42pt;
+  padding: 0;
+  margin: 0;
+}
+nav ul li h2 a {
   color: #a2132f;
   text-decoration: none;
+}
+nav ul .current-page {
+  background-color: #a2132f;
+}
+nav ul .current-page a {
+  color: white;
 }
 nav:after {
   content: "";
@@ -62,13 +72,18 @@ body > article {
   padding: 18px 0;
   width: 100%;
 }
-body > article h2 {
+body > article h3 {
   width: 800px;
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
-  font-size: 42pt;
+  font-size: 24pt;
+  font-weight: normal;
 }
 body > article p {
+  width: 760px;
+  margin: 0 auto;
+}
+body > article ul {
   width: 760px;
   margin: 0 auto;
 }
