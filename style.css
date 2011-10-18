@@ -6,47 +6,11 @@ html {
 }
 body {
   font-family: sans-serif;
-  background-color: #a2132f;
+  background-color: #fdcea4;
   color: white;
   margin: 0;
   padding: 0;
   font-size: 16pt;
-}
-nav {
-  display: block;
-  color: white;
-  width: 100%;
-  overflow: hidden;
-  background-color: #fdcea4;
-}
-nav ul {
-  width: 800px;
-  margin: 0 auto;
-  padding: 0;
-  border: 0;
-  list-style-type: none;
-  display: block;
-}
-nav ul li {
-  width: 25%;
-  float: left;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-}
-nav ul li h2 {
-  font-size: 42pt;
-  padding: 0;
-  margin: 0;
-}
-nav ul li h2 a {
-  color: #a2132f;
-  text-decoration: none;
-}
-nav ul .current-page {
-  background-color: #a2132f;
-}
-nav ul .current-page a {
-  color: white;
 }
 nav:after {
   content: "";
@@ -66,26 +30,14 @@ h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 48pt;
 }
-body > article {
-  background-color: #ff4334;
-  margin: 12px 0;
-  padding: 18px 0;
+article {
   width: 100%;
 }
-body > article h3 {
+#canvas {
   width: 800px;
+  height: 400px;
   margin: 0 auto;
-  font-family: 'Raleway', sans-serif;
-  font-size: 24pt;
-  font-weight: normal;
-}
-body > article p {
-  width: 760px;
-  margin: 0 auto;
-}
-body > article ul {
-  width: 760px;
-  margin: 0 auto;
+  display: block;
 }
 footer {
   color: white;

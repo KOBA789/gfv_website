@@ -4,27 +4,15 @@ html ->
     meta charset: 'utf-8'
     title 'GFVision - Home'
     link rel: 'stylesheet', href: './style.css'
-    link rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Raleway:100'
     script src: 'jquery.js'
+    script src: 'shape.js'
+    script src: 'draw.js'
     script src: 'main.js'
 
   body ->
     header ->
       h1 'GFVision'
-      nav ->
-        ul id: 'menu', ->
-          li class: 'current-page', ->
-            h2 -> a href: '#', 'Home'
-          li ->
-            h2 -> a href: '#', 'About'
-          li ->
-            h2 -> a href: '#', 'Works'
-          li ->
-            h2 -> a href: '#', 'Contact'
-    article ->
-      h3 -> '新着情報'
-      ul ->
-        li -> 'GFVision の公式サイトを公開しました。'
-
+    nav ->
+      canvas '#canvas', width: 800, height: 400, ->
     footer ->
       p 'Copyright (C) 2011 GFVision All Rights Reserved.'
