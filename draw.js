@@ -51,6 +51,7 @@ Drawing = (function() {
         this.ctx.fill();
       } else if (entity.style instanceof Wire) {
         this.ctx.strokeStyle = entity.style.color;
+        this.ctx.lineWidth = entity.style.lineWidth;
         this.ctx.stroke();
       }
       this.ctx.restore();
